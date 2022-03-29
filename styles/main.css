@@ -19,6 +19,7 @@ body {
     background: #ecf0f1;
     display: flex;
     flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .col {
@@ -44,6 +45,7 @@ body {
     height: 30px;
     border: 2px solid white;
     border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #colors div:hover {
@@ -51,29 +53,29 @@ body {
 }
 
 #white {
-    background: white;
+    background: rgba(236, 240, 241, 1);
 }
 
 #red {
-    background: #c23616;
+    background: rgba(155, 47, 22, 1);
 }
 
 #blue {
-    background: #487eb0;
+    background: rgba(72, 126, 176, 1);
 }
 
 #green {
-    background: #44bd32;
+    background: rgba(68, 189, 50, 1);
 }
 
 #yellow {
-    background: #f1c40f;
+    background: rgba(241, 196, 15, 1);
 }
 
 #orange {
-    background: #d35400;
+    background: rgba(211, 84, 0, 1);
 }
 
 #purple {
-    background: #833471;
+    background: rgba(107, 52, 94, 1);
 }
