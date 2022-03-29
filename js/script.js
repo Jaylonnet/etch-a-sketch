@@ -1,9 +1,13 @@
 const container = document.querySelector('.container')
 
 function createGrid(num) {
+  if (num > 100) {
+    alert('Grid number too high');
+    return;
+  };
   if (container.firstElementChild) {
     clearGrid();
-  }
+  };
   for (let i = 0; i < num; i++) {
     const col = document.createElement('div');
     col.classList.add('col');
