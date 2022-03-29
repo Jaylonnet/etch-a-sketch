@@ -34,13 +34,13 @@ body {
     
 }
 
-#colors {
+#colours {
     display: flex;
     gap: 16px;
-    margin-top: 16px;
+    margin-top: 30px;
 }
 
-#colors div {
+#colours div {
     width: 30px;
     height: 30px;
     border: 2px solid white;
@@ -48,34 +48,34 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-#colors div:hover {
+#colours div:hover {
     cursor: pointer;
 }
 
 #white {
-    background: rgba(236, 240, 241, 1);
+    background: rgba(236, 240, 241);
 }
 
 #red {
-    background: rgba(155, 47, 22, 1);
+    background: rgba(155, 47, 22);
 }
 
 #blue {
-    background: rgba(72, 126, 176, 1);
+    background: rgba(72, 126, 176);
 }
 
 #green {
-    background: rgba(68, 189, 50, 1);
+    background: rgba(68, 189, 50);
 }
 
 #yellow {
-    background: rgba(241, 196, 15, 1);
+    background: rgba(241, 196, 15);
 }
 
 #orange {
-    background: rgba(211, 84, 0, 1);
+    background: rgba(211, 84, 0);
 }
 
 #purple {
-    background: rgba(107, 52, 94, 1);
+    background: rgba(107, 52, 94);
 }
