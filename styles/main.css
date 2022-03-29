@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f3640;
+}
+
+.container {
+    width: 700px;
+    height: 700px;
+    background: cyan;
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    background-color: red;
+    border: 1px solid black;
+}
