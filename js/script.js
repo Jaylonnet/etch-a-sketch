@@ -1,3 +1,29 @@
+const container = document.querySelector('.container')
+
+function createGrid(num) {
+  if (container.firstElementChild) {
+    clearGrid();
+  };
+  for (let i = 0; i < num; i++) {
+    const col = document.createElement('div');
+    col.classList.add('col');
+    for (let x = 0; x < num; x++) {
+      const box = document.createElement('div');
+      box.classList.add('box');
+      col.appendChild(box);
+    };
+    container.appendChild(col);
+  };
+};
+
+function clearGrid() {
+  while(container.firstElementChild) {
+    container.firstElementChild.remove();
+  };
+};
+
+createGrid(64);
+
 const boxes = document.querySelectorAll('.box');
 const colours = document.querySelectorAll('#colours div');
 
@@ -13,8 +39,8 @@ boxes.forEach((box) => {
     let rgba = getBackgroundColour(box);
     let current_rgba = parseFloat(rgba.match(rgbAlpha));
     if (current_rgba < 1.0) {
-    new_rgba = current_rgba + 0.1
-    box.style.backgroundColor = `rgba(${currentColour}, ${new_rgba})`
+      new_rgba = current_rgba + 0.2
+      box.style.backgroundColor = `rgba(${currentColour}, ${new_rgba})`
     };
   });
 });
@@ -30,4 +56,4 @@ colours.forEach((colour) => {
 //function to get the background colour of an element
 function getBackgroundColour(element) {
   return window.getComputedStyle(element).getPropertyValue('background-color');
-}
+};
