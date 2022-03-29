@@ -52,8 +52,8 @@ body {
     cursor: pointer;
 }
 
-#white {
-    background: rgba(236, 240, 241);
+#grey {
+    background: rgba(66, 66, 66);
 }
 
 #red {
