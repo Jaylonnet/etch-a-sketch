@@ -5,7 +5,7 @@ const rgbAlpha = /[0-9].[0-9][0-9]/
 // we use the .forEach method to iterate through each button
 boxes.forEach((box) => {
   box.addEventListener('mouseover', () => {
-    let rgba = window.getComputedStyle(box).getPropertyValue('background-color');
+    let rgba = getBackgroundColour(box);
     let current_rgba = parseFloat(rgba.match(rgbAlpha));
     if (current_rgba < 1.0) {
     new_rgba = current_rgba + 0.1
@@ -17,7 +17,11 @@ boxes.forEach((box) => {
 
 colours.forEach((colour) => {
   colour.addEventListener('click', () => {
-    currentColour = window.getComputedStyle(colour).getPropertyValue('background-color');
-    console.log(currentColour)
+    currentColour = getBackgroundColour(colour);
+    console.log(currentColour);
   });
 });
+
+function getBackgroundColour(element) {
+  return window.getComputedStyle(element).getPropertyValue('background-color');
+}
