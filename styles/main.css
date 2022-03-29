@@ -6,12 +6,17 @@
 
 body {
     background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .container {
     width: 700px;
     height: 700px;
-    background: cyan;
+    background: #ecf0f1;
     display: flex;
     flex-direction: column;
 }
@@ -23,6 +28,52 @@ body {
 
 .box {
     flex: 1;
-    background-color: red;
-    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: 1px solid lightgray;
+    
+}
+
+#colors {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+#colors div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#colors div:hover {
+    cursor: pointer;
+}
+
+#white {
+    background: white;
+}
+
+#red {
+    background: #c23616;
+}
+
+#blue {
+    background: #487eb0;
+}
+
+#green {
+    background: #44bd32;
+}
+
+#yellow {
+    background: #f1c40f;
+}
+
+#orange {
+    background: #d35400;
+}
+
+#purple {
+    background: #833471;
 }
